@@ -1,0 +1,17 @@
+# Requirements for Resume and Job Description Matcher App
+
+# Gradio for building the web app interface
+gradio>=4.0
+
+# PyPDF2 for extracting text from PDF resumes and job descriptions
+PyPDF2>=3.0.1
+
+# LangChain core components (prompt templates, parsers)
+langchain-core>=0.3.0
+
+# LangChain Ollama integration for Community LLMs
+langchain-community>=0.0.10
+
+# LangChain Ollama integration for OpenAI LLMs
+langchain-openai>=0.0.5
+openai>=1.0.0
