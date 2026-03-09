@@ -1,3 +1,4 @@
+import os
 import gradio as gr
 from PyPDF2 import PdfReader
 from main import chat
@@ -53,5 +54,5 @@ with gr.Blocks(title="Resume Analyser") as demo:
         outputs=output,
     )
 
-if __name__ == "__main__":
-    demo.launch(share=True)
+port = int(os.environ.get("PORT", 7860))
+demo.launch(server_name="0.0.0.0", server_port=port)
